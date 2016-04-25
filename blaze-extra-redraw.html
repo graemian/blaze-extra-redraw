@@ -1,0 +1,26 @@
+<head>
+  <title>blaze-extra-redraw</title>
+</head>
+
+<body>
+
+  {{> hello}}
+
+</body>
+
+<template name="hello">
+
+    {{> child data}}
+
+</template>
+
+
+<template name="child">
+
+    {{#each data}}
+
+        {{ value }}
+
+    {{/each}}
+
+</template>
